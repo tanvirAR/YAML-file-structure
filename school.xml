@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<School>
+    <name>DPS</name>
+    <principle>Someone</principle>
+    <Students>
+        <Student>
+            <role>7</role>
+            <name>Jack</name>
+            <marks>97</marks>
+        </Student>
+        <Student>
+            <role>13</role>
+            <name>Daniel</name>
+            <marks>83</marks>
+        </Student>
+    </Students>
+</School>

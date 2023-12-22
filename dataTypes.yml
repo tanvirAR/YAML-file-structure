@@ -1,0 +1,53 @@
+# String variables
+name: Jack Dorsey
+fruit: "apple"
+job: 'SWE'
+
+
+bio: |
+ this is jack sparrow
+ I am a nice guy
+
+message: >
+  this will
+  all be
+  in one line
+
+---
+
+# same as
+message: this will all be in one single line
+
+number: 5474
+marks: 98.76
+booleanValue: No  # also work with n, N, false, False, FALSE
+# same for true
+
+
+# specify the type
+zero: !!int 0
+positiveNum: !!int 45
+negativeNumber: !!int -45
+binaryNumber: !!int 0b1101
+octalNumber: !!int 06574
+hexa: !!int 0x45
+exponential number: 6.023E56
+commaValue: !!int +540_000 # 540,000
+
+---
+
+# floating point numbers
+marks: !!float 56.89
+infinite: !!float .inf
+not a num: .nan
+
+---
+
+# null
+surname: !!nul Null # or null NULL
+~: this is a null key
+
+---
+
+
+# dates & time

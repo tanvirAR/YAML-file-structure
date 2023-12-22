@@ -1,0 +1,81 @@
+student: !!seq
+  - marks
+  - name
+  - roll_no
+
+
+# like this also
+cities: [los angeles, new york]
+
+# some of the keys of the seq will be empty
+# sparse seq
+sparse seq:
+  - hey
+  - how
+  -
+  - Null
+  - sup
+
+
+# nested seq
+  -
+    - mango
+    - apple
+    - banana
+  -
+    - marks
+    - roll num
+    - date- date
+
+# key: value paris are called maps
+!!map
+
+# nested mappings: map within a map
+name: Daniel
+role: { age: 45, job: student }
+
+# pairs: keys may have duplicate values:
+pair example: !!pair
+  - job: student
+  - job: teacher
+
+---
+# same as
+pair example: !!pair [job: student, job: teacher]
+# this will be an array of hashtable
+
+
+# this wil allow to have unique values
+names: !!set
+  ? Jack
+  ? Steve
+  ? Daniel
+
+
+# dictionaries
+People: !!omap
+  - Jack:
+      - name: Jack Sparrow
+        age: 40
+        height: 178
+  - Daniel:
+      - name: Daniel Biltz
+        age: 40
+        height: 178
+
+---
+
+# reusing some properties using anchors
+liking: &likes
+  fav fruit: coconut
+  dislikes: mango
+
+person1:
+  name: Daniel
+  <<: *likes
+
+person2:
+  name: Harry
+  <<: *likes
+  # overwrite
+  dislikes: berries

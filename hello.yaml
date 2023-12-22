@@ -1,0 +1,23 @@
+"apple": "I am a red fruit"
+1: "this is the value"
+
+---
+# lists
+- apple
+- mango
+- banana
+
+---
+
+cities:
+  - los angeles
+  - dallas
+  - san francisco
+
+---
+
+cities: [los angeles, new york]
+
+---
+
+{mango: "yellow fruit", age: 56}
